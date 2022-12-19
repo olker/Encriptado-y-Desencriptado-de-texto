@@ -53,7 +53,7 @@ main{
 }
 .encriptar:hover{
     font-size: 19px;
-    background: #02162c;
+    background: #032141;
 }
 .desencriptar{
     box-sizing: border-box;
@@ -65,4 +65,23 @@ main{
 .desencriptar:hover{
     font-size: 19px; 
     background: #a6acb4;
+}
+.salida{
+    position: absolute;
+    width: 400px;
+    height: 510px;
+    left: 60%;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    
+}
+.textoSalida p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
 }
