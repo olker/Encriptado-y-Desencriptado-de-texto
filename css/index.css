@@ -3,3 +3,22 @@ body{
     width: 100%;
     background: #F3F5FC;
 }
+.enviarTexto{
+    position: absolute;
+    background: #F3F5FC;
+    border: none;
+    resize: none;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+.enviarTexto::placeholder{
+    color: #0A3871;
+}
