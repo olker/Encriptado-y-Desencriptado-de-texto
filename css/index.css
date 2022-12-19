@@ -1,17 +1,28 @@
 body{
     position: relative;
-    width: 100%;
     background: #F3F5FC;
 }
+main{
+    display: inline-block;
+    width: 80%;
+    padding: 5% 8% 5% 8%;
+}
+.entrada{
+    display: block;
+}
+.texto{
+    align-items: flex-start;
+    height: 400px;
+    padding: 10px 0 10px 0;
+    left: 240px;
+    top: 168px;
+}
 .enviarTexto{
-    position: absolute;
     background: #F3F5FC;
     border: none;
     resize: none;
     width: 577px;
     height: 48px;
-    left: 240px;
-    top: 168px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -21,4 +32,37 @@ body{
 }
 .enviarTexto::placeholder{
     color: #0A3871;
+}
+.botones{
+    align-items: flex-start;
+}
+.botones button{
+    flex-direction: row;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 24px;
+    width: 300px;
+    height: 60px;
+    transition:  font-size 0.5s, background 0.5s;
+}
+.encriptar{
+    background: #0A3871;
+    color: #ffffff;
+    margin: auto;
+    margin-right: 25px;
+}
+.encriptar:hover{
+    font-size: 19px;
+    background: #02162c;
+}
+.desencriptar{
+    box-sizing: border-box;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    margin: auto;
+}
+.desencriptar:hover{
+    font-size: 19px; 
+    background: #a6acb4;
 }
