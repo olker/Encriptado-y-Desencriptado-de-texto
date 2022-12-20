@@ -27,7 +27,7 @@ header .logo{
     resize: none;
     outline:none;
     margin: 100px 0 40px 40px;
-    width: 100%;
+    width: 80%;
     height: 280px;
     font-family: 'Inter';
     font-style: normal;
@@ -67,10 +67,23 @@ header .logo{
     font-size: 25px; 
     background: #a6acb4;
 }
+.entrada .advertencia{
+    width: 35%;
+    height: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    padding: 0 30px 10px;
+}
 .salida{
     position: absolute;
     width: 30%;
-    height: 520px;
+    height: 540px;
     left: 60%;
     top: 40px;
     background: #FFFFFF;
@@ -108,7 +121,7 @@ header .logo{
     outline:none;
     margin: 30px 10px 95px 30px;
     width: 85%;
-    height: 280px;
+    height: 320px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -120,9 +133,9 @@ header .logo{
     box-sizing: border-box;
     flex-direction: row;
     padding: 10px;
-    margin: 0 8%;
+    margin: 0 9%;
     font-size: 22px;
-    width: 336px;
+    width: 80%;
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
