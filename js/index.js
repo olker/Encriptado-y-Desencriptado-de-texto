@@ -1,6 +1,6 @@
-let texto = "el gato es un animal muy malo";
-let textoDos ="enterl gaitober enters ufatn ainimesmail mufaty mailober";
-function encriptar(textoEncrip){
+const HTMLmain = document.querySelector(".salida");
+function encriptar(){
+    let textoEncrip = document.querySelector(".enviarTexto").value;
     let nuevaEncr = textoEncrip.replace(/a|e|i|o|u/gi, function (parametro) {
         if(parametro == "a") return parametro.replace("a","ai");
         if(parametro == "e") return parametro.replace("e","enter");
@@ -8,9 +8,11 @@ function encriptar(textoEncrip){
         if(parametro == "o") return parametro.replace("o","ober");
         if(parametro == "u") return parametro.replace("u","ufat");
     });
-    console.log(nuevaEncr);
+    HTMLmain.innerHTML = `<textarea class="mostrarTexto" cols="10" rows="10">${nuevaEncr}</textarea>
+    <button class="copiarTexto">Copiar</button>`;
 }
-function desencriptar(textoDesEncrip){
+function desencriptar(){
+    let textoDesEncrip = document.querySelector(".enviarTexto").value;
     let nuevaDesEncr = textoDesEncrip.replace(/ai|enter|imes|ober|ufat/gi, function (parametro) {
         if(parametro == "ai") return parametro.replace("ai","a");
         if(parametro == "enter") return parametro.replace("enter", "e");
@@ -18,12 +20,8 @@ function desencriptar(textoDesEncrip){
         if(parametro == "ober") return parametro.replace("ober", "o");
         if(parametro == "ufat") return parametro.replace("ufat", "u");
     });
-    console.log(nuevaDesEncr);
+    HTMLmain.innerHTML = `<textarea class="mostrarTexto" cols="30" rows="10">${nuevaDesEncr}</textarea>
+                          <button class="copiarTexto">Copiar</button>`;
 }
-encriptar(texto);
-desencriptar(texto);
-/*La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"*/
+document.getElementById("encriptar").addEventListener("click",encriptar);
+document.getElementById("desencriptar").addEventListener("click",desencriptar);
