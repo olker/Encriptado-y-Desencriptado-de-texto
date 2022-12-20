@@ -18,7 +18,7 @@ function encriptar(){
         <button class="copiarTexto" id="copiarTexto">Copiar</button>`;
         document.querySelector(".copiarTexto").addEventListener("click",copiar);
         mensaje.style.color = "green";
-        mensaje.innerHTML = "# Encriptado exitoso =>";
+        mensaje.innerHTML = "# Encriptado exitoso";
     }else{
         mensaje.style.color = "red";
         mensaje.innerHTML = "# NO se puede ingresar mayúsculas o acentos";
